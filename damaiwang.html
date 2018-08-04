@@ -1,0 +1,1110 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		a{
+			text-decoration:none;
+		}
+		ul li{
+			list-style:none;
+		}
+		.header{
+			width:100%;
+			height:60px;
+			background:#222222;
+			position:relative;
+			left:0px;
+			top:0px;
+		}
+		.header img{
+			width:1200px;
+			height:60px;
+			margin:0 auto;
+			display: block;
+		}
+		.header img:last-child{
+			width:23px;
+			height:23px;
+			position:absolute;
+			right:11px;
+   			top:18px;
+		}
+		.box{
+			width:100%;
+			/*position:relative;*/
+		}
+		.nav{
+			width:100%;
+			height:90px;
+		}
+		.nav_one{
+			width:1200px;
+			height:90px;
+			margin:0px auto;
+			
+		}
+		.nav_one_1{
+			float: left;
+			width:114px;
+			height:90px;
+		}
+		.nav_one_1 img{
+			width:114px;
+			height:51px;
+			display: block;
+			margin-top: 20px;
+		}
+		.nav_two{
+			width:122px;
+			height:90px;
+			cursor:pointer;
+			white-space:nowrap;
+			line-height:90px;
+			float: left;
+			margin-left: 28px;
+		}
+		.nav_two img:first-child{
+			width:12px;
+			height:14px;
+			display:inline-block;
+			vertical-align:middle;
+		}
+		.nav_two span{
+			font-size:16px;
+		}
+		.nav_two img:last-child{
+			width:9px;
+			height:5px;
+			display:inline-block;
+			vertical-align:middle;
+		}
+		.nav_three{
+			width:280px;
+			height:90px;
+			float:left;
+			line-height: 90px;
+		}
+		.nav_three a{
+			display:inline-block;
+			margin-right:15px;
+		}
+		.nav_three a:first-child{
+			color:red;
+		}
+		.nav_three a:nth-child(2){
+			color:black;
+		}
+		.nav_three a:last-child{
+			color:black;
+		}
+		.nav_three a:nth-child(2):hover{
+			color:red;
+		}
+		.nav_three a:last-child:hover{
+			color:red;
+		}
+		.nav_four{
+			width:400px;
+			height:48px;
+			line-height:48px;
+			float:left;
+			background-color:#f2f2f2;
+			margin-top: 19px;
+			border-radius:24px;
+			position:relative;
+		}
+		.nav_four_one{
+			width:325px;
+			height:47px;
+			background-color:#f2f2f2;
+			border:0;
+			font-size:16px;
+			margin-left:53px;
+			line-height:47px;
+		}
+		.nav_four img{
+			display: inline-block;
+			width:17px;
+			height:18px;
+			position:absolute;
+			left: 20px;
+    		top: 15px;
+		}
+		.nav_five{
+			width:129px;
+			height:90px;
+			float:left;
+			line-height:90px;
+			margin-left:20px;
+		}
+		.nav_five img{
+			width:26px;
+			height:26px;
+			vertical-align:middle;
+		}
+		.nav_five a{
+			color:black;
+		}
+		.nav_six{
+			float:left;
+		}
+		.nav_six img{
+			width:47px;
+			height:36px;
+			display:block;
+			margin-top: 24px;
+   			margin-left:18px;
+		}
+		.section{
+			width:1200px;
+			height:320px;
+			position:relative;
+			margin:0 auto;
+			overflow:hidden;
+		}
+		.section_one{
+			list-style:none;
+			position:absolute;
+			right:20px;
+			bottom:20px;
+		}
+		.section_one li{
+			float:left;
+			width:10px;
+			height:10px;
+			border-radius:50%;
+			background-color:#fff;
+			margin-right:20px;
+			opacity:0.4;
+		}
+		.section span{
+			display:block;
+			position:absolute;
+			top:135px;
+		}
+		.section span img{
+			width:50px;
+			height:50px;
+		}
+		.section span:first-child{
+			left:0px;
+		}
+		.section span:last-child{
+			right:0px; 
+		}
+		.content{
+			width:1200px;
+			height:116px;
+			border:1px solid #ebebeb;
+			margin:15px auto;
+		}
+		.content a{
+			color:#111111;
+			display:block;
+			width:120px;
+			height:69px;
+			text-align:center;
+			margin-top:25px;
+			float:left;
+		}
+		.content img{
+			width:30px;
+			height:30px;
+			display:inline-block;
+			margin-top:10px;
+		}
+		.content p{
+			width:120px;
+			height:21px;
+		}
+		.content p:hover{
+			color:red;
+		}
+		.middle{
+			width:1200px;
+			height:455px;
+			border:1px solid #ebebeb;
+			margin:15px auto;
+		}
+		.middle_one{
+			width:1160px;
+			height:40px;
+			margin:20px;
+			line-height:40px;
+		}
+		.middle_one p{
+				font-size:25px;
+				float:left;
+				padding-left:5px;
+		}
+		.middle_one a{
+			font-size:16px;
+			color:#b7b7b7;
+			display:inline-block;
+			float:right;
+			padding-right:20px;
+		}
+		.middle_two{
+			width:240px;
+			height:350px;
+			padding-left:25px;
+			position:relative;
+			left:0px;
+			top:0px;
+			float:left;
+		}
+		.middle_two img{
+			width:238px;
+			height:348px;
+			border:1px solid #ebebeb;
+			display:block;
+		}
+		.middle_two a{
+			color:#fff;
+			font-size:15px;
+			display:block;
+			margin-top:20px;
+		}
+		.middle_two a:hover{
+			color:#ff1268;
+		}
+		.middle_two_a{
+			width:238px;
+			height:118px;
+			background-color:black;
+			background-color:rgba(0,0,0,.5);
+			position:absolute;
+			left:0px;
+			bottom:0px;
+			margin-left:25px;
+		}
+		.middle_two_a a:first-child{
+			width:235px;
+			margin-left:10px;
+		}
+		.middle_two_a a:last-child{
+			font-size:20px;
+			margin-left:10px;
+		}
+		.middle_three{
+			width:880px;
+			height:350px;
+			float:right;
+			margin-right:25px;
+		}
+		.middle_three_a1{
+			width:270px;
+			height:160px;
+			position:relative;
+		}
+		.middle_three_a{
+			width:270px;
+			height:160px;
+			float:left;
+			margin-right:20px;
+    		margin-bottom:30px;
+		}
+		.middle_three img{
+			width:120px;
+			height:160px;
+			display:block;
+			float:left;
+			padding-right:15px;
+		}
+		.middle_three_a a{
+			display:block;
+		}
+		.middle_three_a .middle_three_a1 a:hover{
+				color:red;
+		}
+		.middle_three_a1 a:nth-child(1){
+			color:#4A4A4A;
+			font-size:14px;
+		}
+		.middle_three_a1 a:nth-child(2){
+			color:#9B9B9B;
+			font-size:12px;
+			margin-top:14px;
+		}
+		.middle_three_a1 a:nth-child(3){
+			color:#9B9B9B;;
+			font-size:12px;
+			margin-top:7px;
+		}
+		.middle_three_a1 a:nth-child(4){
+			color:#FF1268;
+			font-size:16px;
+			position:absolute;
+			bottom:0px;
+			left: 130px;
+		}
+		.footer{
+			width:1349px;
+			height:314px;
+			background-color:#f8f8f8;
+			margin:30px auto;
+		}
+		.footer_one{
+			width:1200px;
+			height:90px;
+			margin:0 auto;
+		}
+		.footer_one_a{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			padding:35px 0px;
+			text-align:center;
+
+		}
+		
+		.footer_one_a a{
+			font-size: 13px;
+    		color: #111;
+    	}
+		.footer_one_a span{
+			padding:0 24px;
+		}
+		.footer_one_a a:hover{
+			color:red;
+			text-decoration:underline;
+		}
+		.footer_two{
+			width:1200px;
+			height:223px;
+			
+			margin:0 auto;
+		}
+		.footer_two_a{
+			width:294px;
+			height:114px;
+			float: left;
+		}
+		.footer_two_a a img{
+			width:120px;
+			height:50px;
+			margin-top: 24px;
+    		margin-left: 7px;
+		}
+		.footer_two_a1{
+			width:87px;
+			height:114px;
+			float:right;
+			position:relative;
+		}
+		.footer_two_a1 img{
+			width:87px;
+			height:87px;
+			position:relative;
+			left:-14px;
+			top:0px;
+		}
+		.footer_two_a1 span{
+			color:#111;
+			font-size:14px;
+			vertical-align:middle;
+		}
+		.footer_three{
+			width:780px;
+			height:165px;
+			
+			float:left;
+			margin-left:90px;
+		}
+		.footer_three p{
+				font-size:13px;
+		}
+		.footer_three_a{
+			width:98px;
+			height:26px;
+			background-color:#ff1268;
+			border-radius:13px;
+			line-height:26px;
+
+		}
+		.footer_three_a span{
+			text-align:center;
+			color:#fff;
+			font-size:14px;
+			display:block;
+		}
+		.footer_four{
+			width:780px;
+			height:45px;
+			margin-top:10px;
+		}
+		
+		.footer_four_a a{
+			font-size: 13px;
+    		color: #111;
+    	}
+    	.footer_four_a a:hover{
+    		color:red;
+    	}
+		.footer_four_a li{
+				float:left;
+				margin-right:10px;
+		}
+		.footer_five{
+			width:780px;
+			height:60px;
+			margin-top:40px;
+		}
+
+		
+		.footer_five img:nth-child(1){
+			width:110px;
+			height:30px;
+		}
+		.footer_five img:nth-child(2){
+			width:110px;
+			height:30px;
+		}
+		.footer_five img:nth-child(3){
+			width:40px;
+			height:30px;
+		}
+		.footer_five img:nth-child(4){
+			width:100px;
+			height:40px;
+		}
+		.footer_five img:nth-child(5){
+			width:70px;
+			height:30px;
+		}
+		.aside{
+			width:80px;
+			height:240px;
+			position:fixed;
+			right:24px;
+			bottom:0px;
+			z-index:9999999;
+			background-color:#fff;
+		}
+		.aside_two{
+			width:80px;
+			height:71px;
+			border:1px solid black;
+			text-align:center;
+			position:relative;
+			z-index:1;
+		}
+		.aside_one{
+			width:80px;
+			height:71px;
+			border:1px solid black;
+			text-align:center;
+		}
+		.aside_three{
+			width:80px;
+			height:71px;
+			border:1px solid black;
+			text-align:center;
+			display:none;
+		}
+		.aside_two:hover .aside_bth{
+			display:block;
+		}
+		.aside p{
+			font-size:12px;
+			color:#111;
+			margin:5px 0 0;
+		}
+		.aside img{
+			width:28px;
+			height:26px;
+			margin-top:10px;
+		}
+		.aside p:hover{
+			color:red;
+		}
+		.aside_bth{
+			width:90px;
+			height:90px;
+			position:absolute;
+			right: 94px;
+    		top: -7px;
+    		background-color:#fff;
+    		/*box-shadow:0px 0px 5px #fff;*/
+    		display:none;
+		}
+		.aside_bth img{
+			width:80px;
+			height:80px;
+			margin:5px auto;
+		}
+		.aside_bth_a{
+			width:0px;
+			height:0px;
+			border:10px solid transparent;
+			border-left-color:#fff;
+			position:fixed;
+			right: 97px;
+    		bottom: 132px;
+		}
+</style>
+</head>
+<body>
+	<div class="header">
+		<img src="img/header.jpg"/>
+		<img class="header_two" src="img/header_one.png"/>
+	</div>
+	<div class="box">
+		<div class="nav">
+			<div class="nav_one">
+				<a href="#" class="nav_one_1"><img src="img/nav.png"/></a>
+				<div class="nav_two">
+					<img src="img/nav1.png"/>
+					<span>全国</span>
+					<img src="img/nav2.png"/>
+				</div>
+				<div class="nav_three">
+					<a href="#">首页</a>
+					<a href="#">分类</a>
+					<a href="#">EngLish</a>
+				</div>
+				<div class="nav_four">
+					<img src="img/nav3.png"/>
+					<input class="nav_four_one" type="text" placeholder="搜索明星、演出、体育赛事" />
+				</div>
+				<div class="nav_five">
+					<img src="img/nav4.png"/>
+					<a href="#">登录</a>
+					<span>|</span>
+					<a href="#">注册</a>
+				</div>
+				<div class="nav_six">
+					<a href="#"><img src="img/nav5.png"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+				<img class="section_two" src="img/section1.jpg" style="width:1200px; height:320px;" />
+			<ul class="section_one">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<span class="section_one_a"><img src="img/section9.jpg"/></span>
+			<span class="section_one_b"><img src="img/section10.jpg"/></span>
+		</div>
+		<div class="content">
+			<a href="#">
+				<img src="img/content1.jpg"/>
+				<p>演唱会</p>
+			</a>
+			<a href="#">
+				<img src="img/content2.jpg"/>
+				<p>话剧歌曲</p>
+			</a>
+			<a href="#">
+				<img src="img/content3.jpg"/>
+				<p>体育赛事</p>
+			</a>
+			<a href="#">
+				<img src="img/content4.jpg"/>
+				<p>儿童亲子</p>
+			</a>
+			<a href="#">
+				<img src="img/content5.jpg"/>
+				<p>度假休闲</p>
+			</a>
+			<a href="#">
+				<img src="img/content6.jpg"/>
+				<p>音乐会</p>
+			</a>
+			<a href="#">
+				<img src="img/content7.jpg"/>
+				<p>曲苑杂坛</p>
+			</a>
+			<a href="#">
+				<img src="img/content8.jpg"/>
+				<p>舞蹈芭蕾</p>
+			</a>
+			<a href="#">
+				<img src="img/content9.jpg"/>
+				<p>动漫</p>
+			</a>
+			<a href="#">
+				<img src="img/content10.jpg"/>
+				<p>旅游展览</p>
+			</a>
+		</div>
+		<div class="middle">
+			<div class="middle_one">
+				<p>演唱会</p>
+				<a href="#">查看全部</a>
+			</div>
+			<div class="middle_two">
+				<img src="img/middle1.jpg"/>
+				<div class="middle_two_a">
+					<a href="#">2018五月天LIFE[人生无限公司]世<br/>界巡回演唱会 南昌站</a>
+					<a href="#">￥255起</a>
+				</div>
+			</div>
+			<div class="middle_three">
+				<div class="middle_three_a">
+						<a href="#"><img src="img/middle3.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">2018上海春浪音乐节</a>
+							<a href="#">上海|上海国际音乐村<br/>(光明生态园)</a>
+							<a href="#">2018.09.22-2018.09.23</a>
+							<a href="#">￥200起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle4.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">张杰2018“未·LIVE”巡回演唱会</a>
+							<a href="#">深圳 | 华润深圳湾体育中<br/>心＂春茧＂体育场</a>
+							<a href="#">2018.09.08 19:30</a>
+							<a href="#">￥280起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle5.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">G.E.M.邓紫棋<br/>【Queen of ...</a>
+							<a href="#">上海 | 梅赛德斯-奔驰文化<br/>中心</a>
+							<a href="#">2018.08.04-08.05</a>
+							<a href="#">￥380起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle6.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">2018上海金山城市沙<br/>滩 天猫国际 世界妙物纪热波音乐节</a>
+							<a href="#">上海 | 上海金山城市沙滩</a>
+							<a href="#">2018.09.08 19:30</a>
+							<a href="#">￥320起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle7.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">I＇m A-Lin 世界巡回<br/>演唱会-成都站</a>
+							<a href="#">成都 | 四川省体育馆</a>
+							<a href="#">2018.08.11</a>
+							<a href="#">¥380起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle8.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">2018乐华七子-NEXT<br/>巡回粉丝见面会-广州站</a>
+							<a href="#">广州 | 广州体育馆</a>
+							<a href="#">2018.08.18 20:00</a>
+							<a href="#">¥680起</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle">
+			<div class="middle_one">
+				<p>话剧歌剧</p>
+				<a href="#">查看全部</a>
+			</div>
+			<div class="middle_two">
+				<img src="img/middle10.jpg"/>
+				<div class="middle_two_a">
+					<a href="#">开心麻花经典爆笑舞台剧《乌龙山<br/>伯爵》第54轮</a>
+					<a href="#">￥80起</a>
+				</div>
+			</div>
+			<div class="middle_three">
+				<div class="middle_three_a">
+						<a href="#"><img src="img/middle11.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">太阳马戏《阿凡达前<br/>传：托鲁克-首次翱...</a>
+							<a href="#">北京 | 华熙LIVE.凯迪拉克<br/>中心</a>
+							<a href="#">2018.08.01-08.12</a>
+							<a href="#">￥280起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle12.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">开心麻花爆笑舞台剧<br/>《李茶的姑妈》第1...</a>
+							<a href="#">北京 | 地质礼堂剧场</a>
+							<a href="#">2018.07.18-08.19</a>
+							<a href="#">¥80起 </a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle13.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">开心麻花爆笑舞台剧<br/>《牢友记》</a>
+							<a href="#">上海 | 人民大舞台</a>
+							<a href="#">2018.07.31-08.19</a>
+							<a href="#">¥80起 </a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle14.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">MaiLive多媒体3D舞<br/>台剧 盗墓笔记番外...</a>
+							<a href="#">杭州 | 杭州剧院</a>
+							<a href="#">2018.10.13</a>
+							<a href="#">¥180起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle15.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">白夜行A RANSPACE<br/> MUSICAL</a>
+							<a href="#">上海 | 上汽上海文化广场</a>
+							<a href="#">2018.11.30-12.09</a>
+							<a href="#">¥180起 </a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle16.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">百老汇当红原版音乐<br/>剧《Kinky Boots长...</a>
+							<a href="#">上海 | 上汽上海文化广场</a>
+							<a href="#">2018.07.11-08.05</a>
+							<a href="#">¥80起</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle">
+			<div class="middle_one">
+				<p>话剧歌剧</p>
+				<a href="#">查看全部</a>
+			</div>
+			<div class="middle_two">
+				<img src="img/middle19.jpg"/>
+				<div class="middle_two_a">
+					<a href="#">2018法国超级杯</a>
+					<a href="#">¥199起</a>
+				</div>
+			</div>
+			<div class="middle_three">
+				<div class="middle_three_a">
+						<a href="#"><img src="img/middle20.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">2018年道达尔·世界羽<br/>毛球锦标赛</a>
+							<a href="#">南京 | 南京青奥体育公园<br/>体育馆</a>
+							<a href="#">2018.07.30-08.05</a>
+							<a href="#">¥50起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle21.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">2018中国足球协会超级联赛大连一方主场...</a>
+							<a href="#">大连 | 大连体育中心体育<br/>场</a>
+							<a href="#">2018.08.05</a>
+							<a href="#">¥60起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle22.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">超级企鹅联盟-终极红<br/>蓝大战</a>
+							<a href="#">上海 | 东方体育中心</a>
+							<a href="#">2018.09.15</a>
+							<a href="#">¥180起 </a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle23.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">2018WWE经典美式<br/>摔跤娱乐秀—中国赛...</a>
+							<a href="#">上海 | 梅赛德斯-奔驰文化<br/>中心</a>
+							<a href="#">2018.09.01</a>
+							<a href="#">¥280起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle24.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">2018赛季重庆斯威足<br/>球队（重庆当代力帆...</a>
+							<a href="#">重庆 | 重庆奥体中心</a>
+							<a href="#">2018.03.03-11.07</a>
+							<a href="#">¥60起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle25.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">2018东风悦达起亚斯<br/>坦科维奇杯洲际篮球...</a>
+							<a href="#">深圳 | 深圳市宝安体育中<br/>心体育馆</a>
+							<a href="#">2018.08.14-08.17</a>
+							<a href="#">¥100起</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="middle">
+			<div class="middle_one">
+				<p>儿童亲子</p>
+				<a href="#">查看全部</a>
+			</div>
+			<div class="middle_two">
+				<img src="img/middle30.jpg"/>
+				<div class="middle_two_a">
+					<a href="#">百老汇经典音乐剧《美女与野兽》<br/>中文版</a>
+					<a href="#">¥135起</a>
+				</div>
+			</div>
+			<div class="middle_three">
+				<div class="middle_three_a">
+						<a href="#"><img src="img/middle31.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">北京儿艺--《妈妈咪<br/>鸭之鸭飞冲天》</a>
+							<a href="#">北京 | 首都图书馆剧场</a>
+							<a href="#">2018.07.28-08.05</a>
+							<a href="#">¥80起</a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle32.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">2018太阳马戏<br/>KOOZA秀世界巡演...</a>
+							<a href="#">长沙 | 长沙新国际会展中<br/>心</a>
+							<a href="#">2018.06.29-08.19</a>
+							<a href="#">¥280起 </a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle33.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">美国原版音乐舞台剧<br/>《汪汪队立大功—...</a>
+							<a href="#">苏州 | 苏州文化艺术中心</a>
+							<a href="#">2018.08.02-08.05</a>
+							<a href="#">¥180起 </a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle34.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">【全国首演】DT儿童-<br/>中美联创·多媒体音...</a>
+							<a href="#">上海 | 上海商城剧院</a>
+							<a href="#">2018.08.04</a>
+							<a href="#">¥28起 </a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle35.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">美国原版音乐舞台剧<br/>《汪汪队立大功-救...</a>
+							<a href="#">西安 | 西安索菲特人民大<br/>厦大剧院</a>
+							<a href="#">2018.08.9-12</a>
+							<a href="#">¥180起 </a>
+						</div>
+					</div>
+					<div class="middle_three_a">
+						<a href="#"><img src="img/middle36.jpg"/></a>
+						<div class="middle_three_a1">
+							<a href="#">“徐冰：思想与方<br/>法”北京大型个展</a>
+							<a href="#">北京 | UCCA尤伦斯当代<br/>艺术中心</a>
+							<a href="#">2018.07.21-10.18 10:00-18:30</a>
+							<a href="#">¥100起</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="footer">
+			<div class="footer_one">
+				<ul class="footer_one_a">
+					<li>
+						<a href="#">帮助中心</a>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">公司介绍</a>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">品牌识别</a>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">公司大事记</a>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">隐私权专项政策</a>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">廉政举报</a>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">联系合作</a>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">招聘信息</a>
+						<span>|</span>
+					</li>
+					<li>
+						<a href="#">防骗秘籍</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_two">
+				<div class="footer_two_a">
+					<a href="#"><img src="img/footer1.png"/></a>
+					<div class="footer_two_a1">
+						<img src="img/footer2.png"/>
+						<span>APP下载</span>
+					</div>
+				</div>
+				<div class="footer_three">
+					<a href="#">
+						<div class="footer_three_a">
+							<span>在线客服</span>
+						</div>
+					</a>
+					<div class="footer_four">
+						<ul class="footer_four_a">
+							<li>
+								<a href="#">京ICP证031057号</a>
+								<li>|</li>
+							</li>
+							<li>
+								<a href="#">京ICP备11043884号</a>
+								<li>|</li>
+							</li>
+							<li>
+								<a href="#">京公网安备11010102000430号</a>
+								<li>|</li>
+							</li>
+							<li>
+								<a href="#">广播电视节目制作经营许可证 (京)字第02253号</a>
+								
+							</li>
+							<li>
+								<a href="#">网络文化经营许可证 京网文[2016]3438-413号</a>
+								<li>|</li>
+							</li>
+							<li>
+								<a href="#">营业性演出许可证 京市演587号</a>
+							</li>
+						</ul>
+					</div>
+					<p>北京红马传媒文化发展有限公司 版权所有大麦网Copyright 2003-2018 All Rights Reserved</p>
+					<div class="footer_five">
+						<a href="#"><img src="img/footer10.gif"></a>
+						<a href="#"><img src="img/footer11.png"></a>
+						<a href="#"><img src="img/footer12.png"></a>
+						<a href="#"><img src="img/footer14.png"></a>
+						<a href="#"><img src="img/footer15.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="aside">
+			<div class="aside_one">
+				<a href="#"><img src="img/aside1.jpg"></a>
+				<a href="#"><p>在线客服</p></a>
+			</div>
+			<div class="aside_two">
+				<a href="#"><img src="img/aside2.jpg"></a>
+				<a href="#"><p>APP下载</p></a>
+				<div class="aside_bth">
+					<img src="img/aside_bth.png"/>
+					<div class="aside_bth_a"></div>
+				</div>
+			</div>
+			<div class="aside_three">
+				<a href="#"><img src="img/aside3.jpg"></a>
+				<a href="#"><p>回到顶部</p></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+$(".header_two").click(function(){
+		$(".header").slideUp(500);
+});
+$(function(){
+	initUI();
+	changeImg();
+	$(".section").mouseover(stopChange);
+	$(".section").mouseout(changeImg);
+	let lis = $(".section_one")[0].children;
+	for(let i=0;i<lis.length;i++){
+		lis[i].onclick = function(){
+			goImg(i+1);
+		}
+	}
+	$(".section_one_a").click(function(){
+		ord--;
+		if(ord<1){
+			ord=8;
+		}
+		goImg(ord);
+	});
+	$(".section_one_b").click(function(){
+		ord++;
+		if(ord>8){
+			ord=1;
+		}
+		goImg(ord);
+	});
+});
+function initUI(){
+	let lis = $(".section_one")[0].children;
+	lis[0].style.opacity="0.4";
+}
+let myTimer;
+var ord = 1;
+
+function stopChange(){
+	window.clearInterval(myTimer);
+}
+function goImg(transOrd){
+	ord=transOrd;
+	if(ord>8){
+		ord=1;
+	}
+	let lis = $(".section_one")[0].children;
+		for(let i=0;i<lis.length;i++){
+		lis[i].style.opacity="0.4";
+	}
+	lis[transOrd-1].style.opacity="1";
+	$(".section_two")[0].src="img/section"+transOrd+".jpg";
+	}
+
+function changeImg(){
+	myTimer = setInterval(function(){
+		ord++;
+	if(ord>8){
+		ord=1;
+		}
+	let lis = $(".section_one")[0].children;
+		for(let i=0;i<lis.length;i++){
+			lis[i].style.opacity="0.4";
+		}
+	lis[ord-1].style.opacity="1";
+	$(".section_two")[0].src="img/section"+ord+".jpg";
+	},2000);
+}
+$(window).scroll(function(){
+		let lis=$(document.documentElement).scrollTop();
+		if(lis>200){
+			$(".aside_three").css({"display":"block"});
+		}else{
+			$(".aside_three").css({"display":"none"});
+		}
+
+});
+</script>
